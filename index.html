@@ -149,17 +149,15 @@ button{cursor:pointer;font-family:inherit}
 .hero-overlay{
   position:absolute;inset:0;z-index:1;
   background:
-    linear-gradient(to right,
-      rgba(4,10,5,.92) 0%,
-      rgba(4,10,5,.78) 30%,
-      rgba(4,10,5,.38) 60%,
-      rgba(4,10,5,.1)  100%
-    ),
     linear-gradient(to top,
-      rgba(4,10,5,.9)  0%,
-      rgba(4,10,5,.5)  35%,
-      rgba(4,10,5,.15) 70%,
-      transparent      100%
+      rgba(4,10,5,.88) 0%,
+      rgba(4,10,5,.55) 30%,
+      rgba(4,10,5,.18) 60%,
+      rgba(4,10,5,.08) 100%
+    ),
+    linear-gradient(to bottom,
+      rgba(4,10,5,.35) 0%,
+      transparent 20%
     );
 }
 /* Subtle green tint on image side */
@@ -188,15 +186,17 @@ button{cursor:pointer;font-family:inherit}
   display:block;font-family:'Fraunces',serif;font-size:1.6rem;
   font-weight:300;font-style:italic;color:rgba(255,255,255,.85);line-height:1.2;
 }
-/* Content — bottom-left aligned */
+/* Content — centered */
 .hero-inner{
   position:relative;z-index:3;
   width:100%;
-  padding:0 0 clamp(8rem,15vw,12rem);
+  padding:0 0 clamp(6rem,12vw,10rem);
+  display:flex;justify-content:center;
 }
 .hero-content-col{
-  max-width:680px;
-  padding-left:clamp(1.25rem,4vw,3.5rem);
+  max-width:900px;
+  padding:0 clamp(1.25rem,4vw,3.5rem);
+  text-align:center;
 }
 .hero-chip{display:inline-flex;align-items:center;gap:9px;
   background:rgba(40,160,133,.18);border:1px solid rgba(144,213,197,.36);
@@ -207,13 +207,13 @@ button{cursor:pointer;font-family:inherit}
 .hero-chip i{width:6px;height:6px;border-radius:50%;background:var(--t200);
   display:block;flex-shrink:0;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
-.hero-h1{color:#fff;max-width:680px;margin-bottom:1.25rem;font-family:'Plus Jakarta Sans',system-ui,sans-serif;letter-spacing:-1.5px;
+.hero-h1{color:#fff;max-width:100%;margin-bottom:1.25rem;font-family:'Plus Jakarta Sans',system-ui,sans-serif;letter-spacing:-2px;
   opacity:0}
 .hero-h1 em{font-style:italic;font-weight:400;color:var(--t200)}
 .hero-p{font-size:clamp(15px,2vw,17px);color:rgba(255,255,255,.8);
-  font-weight:300;line-height:1.85;max-width:520px;margin-bottom:2.5rem;
+  font-weight:300;line-height:1.85;max-width:680px;margin:0 auto 2.5rem;
   opacity:0}
-.hero-btns{display:flex;gap:.9rem;flex-wrap:wrap;opacity:0}
+.hero-btns{display:flex;gap:.9rem;flex-wrap:wrap;opacity:0;justify-content:center}
 /* Stats bar */
 .hero-bar{position:absolute;bottom:0;left:0;right:0;z-index:2;
   background:rgba(7,22,10,.88);backdrop-filter:blur(14px);
@@ -706,11 +706,7 @@ footer{background:var(--ink);padding:clamp(3.5rem,7vw,5.5rem) 0 2rem}
   <!-- Main content — bottom-left -->
   <div class="hero-inner">
     <div class="hero-content-col">
-<h1 class="H H1 hero-h1" id="h-title">
-        Glycerine &amp;<br>
-        <em>Propylene Glycol</em><br>
-        You Can Trust
-      </h1>
+<h1 class="H H1 hero-h1" id="h-title">SK CHEM SOLUTION</h1>
       <p class="hero-p" id="h-sub">Supplying premium-grade chemicals to Sri Lanka's rubber, textile, personal care, food, and pharmaceutical industries — reliably sourced, safely delivered.</p>
       <div class="hero-btns" id="h-btns">
         <a href="#products" class="btn btn-t">Our Products →</a>
