@@ -523,6 +523,19 @@ button{cursor:pointer;font-family:inherit}
 .ci-lbl{font-size:10px;font-weight:700;text-transform:uppercase;
   letter-spacing:.8px;color:var(--tx2);margin-bottom:2px}
 .ci-val{font-size:14px;font-weight:400;color:var(--ink)}
+.ci-body{flex:1;min-width:0}
+.ci-line{padding:.55rem 0}
+.ci-line+.ci-line{border-top:1px dashed var(--bdr)}
+.ci-lbl+.ci-line{padding-top:.2rem}
+.ci-line:last-child{padding-bottom:0}
+.ci-num{font-size:15px;font-weight:600;color:var(--ink);text-decoration:none}
+.ci-num:hover{color:var(--g600)}
+.ci-wa{font-size:11px;font-weight:600;color:var(--t600);text-decoration:none;margin-left:.5rem}
+.ci-wa:hover{text-decoration:underline}
+.sec-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.4rem}
+.sec-tag{font-size:11px;font-weight:600;line-height:1;padding:.35rem .6rem;border-radius:999px;
+  background:var(--g50);color:var(--g700);border:1px solid var(--g100)}
+.sec-tag.t{background:var(--t50);color:var(--t700);border-color:var(--t200)}
 /* Form */
 .con-form{background:#fff;border-radius:var(--r2);padding:2.25rem;
   border:1px solid var(--bdr);box-shadow:var(--sh1)}
@@ -1198,9 +1211,13 @@ footer{background:var(--ink);padding:clamp(3.5rem,7vw,5.5rem) 0 2rem}
         </div>
         <div class="con-deets">
           <div class="ci"><div class="ci-ic">📍</div><div><div class="ci-lbl">Address</div><div class="ci-val">S.K. Solutions, Colombo, Sri Lanka</div></div></div>
-          <div class="ci"><div class="ci-ic">📞</div><div><div class="ci-lbl">Telephone</div><div class="ci-val">+94 11 000 0000</div></div></div>
+          <div class="ci"><div class="ci-ic">📞</div><div class="ci-body"><div class="ci-lbl">Phone / WhatsApp</div>
+            <div class="ci-line"><a class="ci-num" href="tel:+94777598284">+94 777 598 284</a><a class="ci-wa" href="https://wa.me/94777598284" target="_blank" rel="noopener">WhatsApp ↗</a>
+              <div class="sec-tags"><span class="sec-tag">Rubber &amp; Latex</span><span class="sec-tag">Textile Washing</span></div></div>
+            <div class="ci-line"><a class="ci-num" href="tel:+94777414367">+94 777 414 367</a><a class="ci-wa" href="https://wa.me/94777414367" target="_blank" rel="noopener">WhatsApp ↗</a>
+              <div class="sec-tags"><span class="sec-tag t">Personal Care</span><span class="sec-tag t">Food &amp; Beverage</span><span class="sec-tag t">Pharmaceutical</span></div></div>
+          </div></div>
           <div class="ci"><div class="ci-ic">✉️</div><div><div class="ci-lbl">Email</div><div class="ci-val">info@sksolutions.lk</div></div></div>
-          <div class="ci"><div class="ci-ic">💬</div><div><div class="ci-lbl">WhatsApp</div><div class="ci-val">+94 77 000 0000</div></div></div>
           <div class="ci"><div class="ci-ic">🕐</div><div><div class="ci-lbl">Business Hours</div><div class="ci-val">Mon – Fri: 8:30 AM – 5:30 PM</div></div></div>
         </div>
       </div>
@@ -1285,8 +1302,8 @@ footer{background:var(--ink);padding:clamp(3.5rem,7vw,5.5rem) 0 2rem}
         <li><a href="#products">Formic &amp; Acetic Acid</a></li>
       </ul></div>
       <div class="ft-col"><h5>Contact Us</h5><ul>
-        <li><a href="tel:+94110000000">+94 11 000 0000</a></li>
-        <li><a href="https://wa.me/94770000000">+94 77 000 0000 (WhatsApp)</a></li>
+        <li><a href="tel:+94777598284">+94 777 598 284</a> · Rubber &amp; Latex, Textile Washing</li>
+        <li><a href="tel:+94777414367">+94 777 414 367</a> · Personal Care, Food &amp; Beverage, Pharma</li>
         <li><a href="mailto:info@sksolutions.lk">info@sksolutions.lk</a></li>
         <li><span style="color:rgba(255,255,255,.55);font-size:13px">Colombo, Sri Lanka</span></li>
         <li><span style="color:rgba(255,255,255,.45);font-size:12px">Mon – Fri: 8:30 AM – 5:30 PM</span></li>
